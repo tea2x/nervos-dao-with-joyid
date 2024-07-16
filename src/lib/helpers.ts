@@ -1,9 +1,7 @@
 import { RPC } from "@ckb-lumos/lumos";
 import {
-  Script,
   Address,
   Cell,
-  Transaction,
   since,
   blockchain,
   PackedDao,
@@ -22,7 +20,6 @@ import {
 } from "../config";
 import { addressToScript, TransactionSkeletonType } from "@ckb-lumos/helpers";
 import { CKBIndexerQueryOptions } from "@ckb-lumos/ckb-indexer/src/type";
-import { TerminableCellFetcher } from "@ckb-lumos/ckb-indexer/src/type";
 import { CellCollector, Indexer } from "@ckb-lumos/ckb-indexer";
 import { getConfig } from "@ckb-lumos/config-manager";
 import { dao } from "@ckb-lumos/common-scripts";
