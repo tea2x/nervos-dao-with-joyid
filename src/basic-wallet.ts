@@ -29,7 +29,6 @@ function fixedPointFrom(val: FixedPointLike, decimals = 8): FixedPoint {
   return lVal + BigInt(r.slice(0, decimals).padEnd(decimals, "0"));
 }
 
-// Only for non-joyid options
 export const buildTransfer = async (
   signer:Signer,
   to: Address,
